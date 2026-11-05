@@ -14,4 +14,10 @@ cask "eda" do
   depends_on :macos
 
   app "Eda.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Eda.app"],
+                   must_succeed: true
+  end
 end
