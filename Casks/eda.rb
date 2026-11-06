@@ -1,16 +1,15 @@
 cask "eda" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.0.2"
-  sha256 arm:   "bdd9dceaa33ef37ebc6781d845e536abb63502fba952c0810d03553c112def34",
-         intel: "8c1dd63e9da738244bc6d67a2cab38bdf052b121b2edb980d6e7419cc236b168"
+  version "0.0.3"
+  sha256 arm:   "c85939b13929c3f9517168947880d3983a3a455375cc6d061a69b4027c9f0dec",
+         intel: "aca1e85522bac83d588c56b627abb1d3f0b0ff9e375a5be711d2b73311d09a2b"
 
   url "https://github.com/YuzuZensai/Eda/releases/download/#{version}/Eda-#{version}-osx-#{arch}-stable.dmg"
   name "Eda"
   desc "Git client with visual repository history"
   homepage "https://eda.kirameki.cafe/"
 
-  auto_updates true
   depends_on :macos
 
   app "Eda.app"
