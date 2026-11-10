@@ -14,9 +14,9 @@ cask "eda" do
 
   app "Eda.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Eda.app"],
-                   must_succeed: true
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/Eda.app"],
+        must_succeed: true
   end
 end
