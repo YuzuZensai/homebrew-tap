@@ -1,9 +1,9 @@
 cask "eda" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.0.5"
-  sha256 arm:   "eab503f107fd4bfeba399f7ea5c34b614a2880a2a5ca4114fbe78a972055404c",
-         intel: "5ece5b6abb86ba79879da8788b5bfe0e42ebbc1c178d7ee9a06350e611524d2f"
+  version "0.0.6"
+  sha256 arm:   "58447d325442b75db429217a95ac209b8582ef85c3394fa434520fa926d93db1",
+         intel: "d3f6962cda8cead2a6747b8ab7ff5a044d075d51bc3538e5d35f7b6690818707"
 
   url "https://github.com/YuzuZensai/Eda/releases/download/#{version}/Eda-#{version}-osx-#{arch}-stable.dmg"
   name "Eda"
